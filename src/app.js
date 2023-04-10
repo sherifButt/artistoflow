@@ -13,7 +13,9 @@ app.use(express.json());
 
 // app.use('/api/auth', authRoutes);
 // app.use('/api/subscriptions', subscriptionRoutes);
-
+app.use('/', (req, res) => {
+    res.send('Hello World');
+});
 
 const PORT = process.env.PORT || 3001;
 
